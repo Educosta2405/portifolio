@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"C:\\\\Users\\\\sqble\\\\Desktop\\\\Software\\\\projectlearning\\\\potfolio\" config user.email \"edu.sousabsb@gmail.com\")",
+      "Bash(git -C \"C:\\\\Users\\\\sqble\\\\Desktop\\\\Software\\\\projectlearning\\\\potfolio\" config user.name \"Eduardo Costa Alberto de Sousa\")"
+    ]
+  }
+}

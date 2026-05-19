@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eduardo Sousa — Engenheiro de Sistemas</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <span class="nav__logo">Eduardo Sousa</span>
+      <ul class="nav__links">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#habilidades">Habilidades</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav__mobile" id="mobileMenu">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#habilidades">Habilidades</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero__content">
+      <p class="hero__greeting">Olá, eu sou</p>
+      <h1 class="hero__name">Eduardo Costa<br />Alberto de Sousa</h1>
+      <p class="hero__title">Engenheiro de Sistemas</p>
+      <p class="hero__subtitle">Projetando soluções robustas e escaláveis com foco em arquitetura, infraestrutura e inovação tecnológica.</p>
+      <div class="hero__actions">
+        <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+        <a href="#contato" class="btn btn--outline">Entrar em Contato</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__avatar">
+        <div class="avatar__initials">ES</div>
+      </div>
+      <div class="hero__ring hero__ring--1"></div>
+      <div class="hero__ring hero__ring--2"></div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="section sobre" id="sobre">
+    <div class="container">
+      <h2 class="section__title">Sobre Mim</h2>
+      <div class="sobre__grid">
+        <div class="sobre__text">
+          <p>Sou <strong>Eduardo Costa Alberto de Sousa</strong>, Engenheiro de Sistemas apaixonado por tecnologia e por resolver problemas complexos com soluções elegantes e eficientes.</p>
+          <p>Minha trajetória combina sólida base técnica em arquitetura de sistemas, redes e infraestrutura com experiência prática no desenvolvimento e integração de soluções de software.</p>
+          <p>Busco constantemente aprender e me atualizar para entregar projetos com alta qualidade, segurança e performance.</p>
+        </div>
+        <div class="sobre__cards">
+          <div class="card card--stat">
+            <span class="card__number">5+</span>
+            <span class="card__label">Anos de Experiência</span>
+          </div>
+          <div class="card card--stat">
+            <span class="card__number">20+</span>
+            <span class="card__label">Projetos Entregues</span>
+          </div>
+          <div class="card card--stat">
+            <span class="card__number">10+</span>
+            <span class="card__label">Tecnologias Dominadas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section class="section habilidades" id="habilidades">
+    <div class="container">
+      <h2 class="section__title">Habilidades</h2>
+      <div class="skills__grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Sistemas & Infraestrutura</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <span class="skill-item__name">Linux / Unix</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:90%"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Redes & Protocolos</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:85%"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Virtualização (VMware / Hyper-V)</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:80%"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Segurança de Sistemas</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:75%"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Cloud & DevOps</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <span class="skill-item__name">AWS / Azure</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:80%"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Docker & Kubernetes</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:75%"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">CI/CD Pipelines</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:70%"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Terraform / IaC</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:65%"></div></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group__title">Desenvolvimento</h3>
+          <ul class="skill-list">
+            <li class="skill-item">
+              <span class="skill-item__name">Python</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:85%"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">C / C++</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:78%"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">Shell Script / Bash</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:88%"></div></div>
+            </li>
+            <li class="skill-item">
+              <span class="skill-item__name">SQL & Banco de Dados</span>
+              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:72%"></div></div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="tags__area">
+        <span class="tag">Git</span>
+        <span class="tag">SCRUM / Agile</span>
+        <span class="tag">Arquitetura de Software</span>
+        <span class="tag">Active Directory</span>
+        <span class="tag">TCP/IP</span>
+        <span class="tag">Monitoramento</span>
+        <span class="tag">Elasticsearch</span>
+        <span class="tag">Ansible</span>
+        <span class="tag">PowerShell</span>
+        <span class="tag">ITIL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="section projetos" id="projetos">
+    <div class="container">
+      <h2 class="section__title">Projetos</h2>
+      <div class="projetos__grid">
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__icon">&#128295;</span>
+            <span class="project-card__tag">Infraestrutura</span>
+          </div>
+          <h3 class="project-card__title">Automação de Infraestrutura</h3>
+          <p class="project-card__desc">Pipeline de provisionamento automatizado com Terraform e Ansible para ambientes multi-cloud, reduzindo o tempo de setup em 70%.</p>
+          <div class="project-card__techs">
+            <span>Terraform</span><span>Ansible</span><span>AWS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__icon">&#128202;</span>
+            <span class="project-card__tag">Monitoramento</span>
+          </div>
+          <h3 class="project-card__title">Sistema de Monitoramento</h3>
+          <p class="project-card__desc">Dashboard centralizado de monitoramento de serviços com alertas automáticos, logs estruturados e análise em tempo real.</p>
+          <div class="project-card__techs">
+            <span>Python</span><span>Elasticsearch</span><span>Grafana</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__icon">&#128274;</span>
+            <span class="project-card__tag">Segurança</span>
+          </div>
+          <h3 class="project-card__title">Hardening de Servidores</h3>
+          <p class="project-card__desc">Implementação de políticas de segurança e hardening em servidores Linux e Windows, seguindo padrões CIS Benchmark.</p>
+          <div class="project-card__techs">
+            <span>Linux</span><span>PowerShell</span><span>CIS</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__icon">&#9881;</span>
+            <span class="project-card__tag">DevOps</span>
+          </div>
+          <h3 class="project-card__title">Pipeline CI/CD Corporativo</h3>
+          <p class="project-card__desc">Estruturação de pipeline de integração e entrega contínua para equipe de desenvolvimento, integrando testes automatizados e deploy.</p>
+          <div class="project-card__techs">
+            <span>GitLab CI</span><span>Docker</span><span>Kubernetes</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__icon">&#127760;</span>
+            <span class="project-card__tag">Redes</span>
+          </div>
+          <h3 class="project-card__title">Redesign de Rede Corporativa</h3>
+          <p class="project-card__desc">Replanejamento e implementação de arquitetura de rede segmentada com VLANs, firewall e VPN para empresa de médio porte.</p>
+          <div class="project-card__techs">
+            <span>VLAN</span><span>VPN</span><span>Firewall</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card__header">
+            <span class="project-card__icon">&#128187;</span>
+            <span class="project-card__tag">Desenvolvimento</span>
+          </div>
+          <h3 class="project-card__title">Ferramenta de Gestão de Ativos</h3>
+          <p class="project-card__desc">Aplicação web para inventário e gestão de ativos de TI com integração LDAP, relatórios automatizados e auditoria de mudanças.</p>
+          <div class="project-card__techs">
+            <span>Python</span><span>SQL</span><span>LDAP</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="section contato" id="contato">
+    <div class="container">
+      <h2 class="section__title">Contato</h2>
+      <p class="contato__sub">Tem um projeto ou oportunidade? Vamos conversar.</p>
+      <div class="contato__grid">
+        <div class="contato__info">
+          <a href="mailto:edu.sousabsb@gmail.com" class="contato__item">
+            <span class="contato__icon">&#9993;</span>
+            <div>
+              <strong>E-mail</strong>
+              <span>edu.sousabsb@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contato__item">
+            <span class="contato__icon">&#128101;</span>
+            <div>
+              <strong>LinkedIn</strong>
+              <span>linkedin.com/in/eduardo-sousa</span>
+            </div>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="contato__item">
+            <span class="contato__icon">&#128190;</span>
+            <div>
+              <strong>GitHub</strong>
+              <span>github.com/eduardo-sousa</span>
+            </div>
+          </a>
+        </div>
+        <form class="contato__form" id="contactForm">
+          <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
+          <p class="form__feedback" id="formFeedback"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Eduardo Costa Alberto de Sousa. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
