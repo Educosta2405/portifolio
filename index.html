@@ -3,25 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eduardo Sousa — Engenheiro de Sistemas</title>
+  <title>Eduardo Sousa — Desenvolvedor de Software</title>
+  <meta name="description" content="Eduardo Costa Alberto de Sousa — Desenvolvedor de Software. Sistemas web, sites, landing pages, SaaS e automações para negócios, do banco de dados à interface." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script>document.documentElement.classList.add('has-js');</script>
 </head>
 <body>
+
+  <a href="#conteudo" class="skip-link">Pular para o conteúdo</a>
 
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav__inner">
-      <span class="nav__logo">Eduardo Sousa</span>
+      <a href="#inicio" class="nav__logo">
+        <span class="nav__logo-mark">ES</span>
+        <span class="nav__logo-text">Eduardo Sousa</span>
+      </a>
       <ul class="nav__links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sobre"><span class="nav__num">01</span> Sobre</a></li>
+        <li><a href="#habilidades"><span class="nav__num">02</span> Habilidades</a></li>
+        <li><a href="#projetos"><span class="nav__num">03</span> Projetos</a></li>
+        <li><a href="#processo"><span class="nav__num">04</span> Processo</a></li>
+        <li><a href="#contato"><span class="nav__num">05</span> Contato</a></li>
       </ul>
-      <button class="nav__hamburger" id="hamburger" aria-label="Menu">
+      <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileMenu">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -29,333 +37,537 @@
       <li><a href="#sobre">Sobre</a></li>
       <li><a href="#habilidades">Habilidades</a></li>
       <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#processo">Processo</a></li>
       <li><a href="#contato">Contato</a></li>
     </ul>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="hero__content">
-      <p class="hero__greeting">Olá, eu sou</p>
-      <h1 class="hero__name">Eduardo Costa<br />Alberto de Sousa</h1>
-      <p class="hero__title">Engenheiro de Sistemas</p>
-      <p class="hero__subtitle">Projetando soluções robustas e escaláveis com foco em arquitetura, infraestrutura e inovação tecnológica.</p>
-      <div class="hero__actions">
-        <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
-        <a href="#contato" class="btn btn--outline">Entrar em Contato</a>
-      </div>
-    </div>
-    <div class="hero__visual">
-      <div class="hero__avatar">
-        <div class="avatar__initials">ES</div>
-      </div>
-      <div class="hero__ring hero__ring--1"></div>
-      <div class="hero__ring hero__ring--2"></div>
-    </div>
-  </section>
+  <main id="conteudo">
 
-  <!-- SOBRE -->
-  <section class="section sobre" id="sobre">
-    <div class="container">
-      <h2 class="section__title">Sobre Mim</h2>
-      <div class="sobre__grid">
-        <div class="sobre__text">
-          <p>Sou <strong>Eduardo Costa Alberto de Sousa</strong>, Engenheiro de Sistemas apaixonado por tecnologia e por resolver problemas complexos com soluções elegantes e eficientes.</p>
-          <p>Minha trajetória combina sólida base técnica em arquitetura de sistemas, redes e infraestrutura com experiência prática no desenvolvimento e integração de soluções de software.</p>
-          <p>Busco constantemente aprender e me atualizar para entregar projetos com alta qualidade, segurança e performance.</p>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="hero__content">
+        <p class="hero__greeting">Desenvolvedor de Software · Full-Stack</p>
+        <h1 class="hero__name">Eduardo Costa<br />Alberto de Sousa</h1>
+        <p class="hero__subtitle">Desenvolvo sistemas web, sites, landing pages, SaaS e automações para negócios — do banco de dados à interface. Software funcional, bem construído e pronto para operar.</p>
+        <div class="hero__actions">
+          <a href="#projetos" class="btn btn--primary">Ver Projetos <span class="btn__icon" aria-hidden="true">&#8594;</span></a>
+          <a href="#contato" class="btn btn--outline">Solicitar um Projeto</a>
         </div>
-        <div class="sobre__cards">
-          <div class="card card--stat">
-            <span class="card__number">5+</span>
-            <span class="card__label">Anos de Experiência</span>
-          </div>
-          <div class="card card--stat">
-            <span class="card__number">20+</span>
-            <span class="card__label">Projetos Entregues</span>
-          </div>
-          <div class="card card--stat">
-            <span class="card__number">10+</span>
-            <span class="card__label">Tecnologias Dominadas</span>
-          </div>
-        </div>
+        <ul class="hero__meta">
+          <li><span class="hero__meta-key">Faço</span> Sistemas web · SaaS · Sites · Automações</li>
+          <li><span class="hero__meta-key">Stack</span> Next.js · Node · Python · Cloud</li>
+          <li><span class="hero__meta-key">Base</span> Brasília, BR</li>
+        </ul>
       </div>
-    </div>
-  </section>
-
-  <!-- HABILIDADES -->
-  <section class="section habilidades" id="habilidades">
-    <div class="container">
-      <h2 class="section__title">Habilidades</h2>
-      <div class="skills__grid">
-
-        <div class="skill-group">
-          <h3 class="skill-group__title">Sistemas & Infraestrutura</h3>
-          <ul class="skill-list">
-            <li class="skill-item">
-              <span class="skill-item__name">Linux / Unix</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:90%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">Redes & Protocolos</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:85%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">Virtualização (VMware / Hyper-V)</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:80%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">Segurança de Sistemas</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:75%"></div></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group__title">Cloud & DevOps</h3>
-          <ul class="skill-list">
-            <li class="skill-item">
-              <span class="skill-item__name">AWS / Azure</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:80%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">Docker & Kubernetes</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:75%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">CI/CD Pipelines</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:70%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">Terraform / IaC</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:65%"></div></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group__title">Desenvolvimento</h3>
-          <ul class="skill-list">
-            <li class="skill-item">
-              <span class="skill-item__name">Python</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:85%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">JavaScript</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:82%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">Node.js</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:78%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">Shell Script / Bash</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:88%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">SQL & Banco de Dados</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:72%"></div></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="skill-group">
-          <h3 class="skill-group__title">JavaScript & Frameworks</h3>
-          <ul class="skill-list">
-            <li class="skill-item">
-              <span class="skill-item__name">React</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:80%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">Next.js</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:75%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">Vue.js</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:70%"></div></div>
-            </li>
-            <li class="skill-item">
-              <span class="skill-item__name">TypeScript</span>
-              <div class="skill-item__bar"><div class="skill-item__fill" style="--w:75%"></div></div>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="tags__area">
-        <span class="tag">Git</span>
-        <span class="tag">SCRUM / Agile</span>
-        <span class="tag">Arquitetura de Software</span>
-        <span class="tag">Active Directory</span>
-        <span class="tag">TCP/IP</span>
-        <span class="tag">Monitoramento</span>
-        <span class="tag">Elasticsearch</span>
-        <span class="tag">Ansible</span>
-        <span class="tag">PowerShell</span>
-        <span class="tag">ITIL</span>
-        <span class="tag">Express.js</span>
-        <span class="tag">Tailwind CSS</span>
-        <span class="tag">Redux</span>
-        <span class="tag">Zustand</span>
-        <span class="tag">Vite</span>
-        <span class="tag">Angular</span>
-        <span class="tag">Svelte</span>
-        <span class="tag">Fastify</span>
-        <span class="tag">Jest</span>
-        <span class="tag">Axios</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJETOS -->
-  <section class="section projetos" id="projetos">
-    <div class="container">
-      <h2 class="section__title">Projetos</h2>
-      <div class="projetos__grid">
-
-        <article class="project-card">
-          <div class="project-card__header">
-            <span class="project-card__icon">&#128295;</span>
-            <span class="project-card__tag">Infraestrutura</span>
-          </div>
-          <h3 class="project-card__title">Automação de Infraestrutura</h3>
-          <p class="project-card__desc">Pipeline de provisionamento automatizado com Terraform e Ansible para ambientes multi-cloud, reduzindo o tempo de setup em 70%.</p>
-          <div class="project-card__techs">
-            <span>Terraform</span><span>Ansible</span><span>AWS</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__header">
-            <span class="project-card__icon">&#128202;</span>
-            <span class="project-card__tag">Monitoramento</span>
-          </div>
-          <h3 class="project-card__title">Sistema de Monitoramento</h3>
-          <p class="project-card__desc">Dashboard centralizado de monitoramento de serviços com alertas automáticos, logs estruturados e análise em tempo real.</p>
-          <div class="project-card__techs">
-            <span>Python</span><span>Elasticsearch</span><span>Grafana</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__header">
-            <span class="project-card__icon">&#128274;</span>
-            <span class="project-card__tag">Segurança</span>
-          </div>
-          <h3 class="project-card__title">Hardening de Servidores</h3>
-          <p class="project-card__desc">Implementação de políticas de segurança e hardening em servidores Linux e Windows, seguindo padrões CIS Benchmark.</p>
-          <div class="project-card__techs">
-            <span>Linux</span><span>PowerShell</span><span>CIS</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__header">
-            <span class="project-card__icon">&#9881;</span>
-            <span class="project-card__tag">DevOps</span>
-          </div>
-          <h3 class="project-card__title">Pipeline CI/CD Corporativo</h3>
-          <p class="project-card__desc">Estruturação de pipeline de integração e entrega contínua para equipe de desenvolvimento, integrando testes automatizados e deploy.</p>
-          <div class="project-card__techs">
-            <span>GitLab CI</span><span>Docker</span><span>Kubernetes</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__header">
-            <span class="project-card__icon">&#127760;</span>
-            <span class="project-card__tag">Redes</span>
-          </div>
-          <h3 class="project-card__title">Redesign de Rede Corporativa</h3>
-          <p class="project-card__desc">Replanejamento e implementação de arquitetura de rede segmentada com VLANs, firewall e VPN para empresa de médio porte.</p>
-          <div class="project-card__techs">
-            <span>VLAN</span><span>VPN</span><span>Firewall</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__header">
-            <span class="project-card__icon">&#128187;</span>
-            <span class="project-card__tag">Desenvolvimento</span>
-          </div>
-          <h3 class="project-card__title">Ferramenta de Gestão de Ativos</h3>
-          <p class="project-card__desc">Aplicação web para inventário e gestão de ativos de TI com integração LDAP, relatórios automatizados e auditoria de mudanças.</p>
-          <div class="project-card__techs">
-            <span>Python</span><span>SQL</span><span>LDAP</span>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-card__header">
-            <span class="project-card__icon">&#127918;</span>
-            <span class="project-card__tag">Desenvolvimento</span>
-          </div>
-          <h3 class="project-card__title">Verificador de Requisitos de Jogos</h3>
-          <p class="project-card__desc">Website que permite ao usuário selecionar um jogo e visualizar os requisitos mínimos e recomendados de hardware necessários para rodá-lo, com dados hospedados e processados via Azure.</p>
-          <div class="project-card__techs">
-            <span>HTML</span><span>JavaScript</span><span>Python</span><span>Azure</span>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section class="section contato" id="contato">
-    <div class="container">
-      <h2 class="section__title">Contato</h2>
-      <p class="contato__sub">Tem um projeto ou oportunidade? Vamos conversar.</p>
-      <div class="contato__grid">
-        <div class="contato__info">
-          <a href="mailto:edu.sousabsb@gmail.com" class="contato__item">
-            <span class="contato__icon">&#9993;</span>
-            <div>
-              <strong>E-mail</strong>
-              <span>edu.sousabsb@gmail.com</span>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__panel">
+          <div class="hero__terminal">
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--r"></span>
+              <span class="terminal__dot terminal__dot--y"></span>
+              <span class="terminal__dot terminal__dot--g"></span>
+              <span class="terminal__title">eduardo@sousa — ~/projetos</span>
             </div>
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contato__item">
-            <span class="contato__icon">&#128101;</span>
-            <div>
-              <strong>LinkedIn</strong>
-              <span>linkedin.com/in/eduardo-sousa</span>
+            <div class="terminal__body">
+              <p class="t-line"><span class="t-prompt">$</span> whoami</p>
+              <p class="t-line t-out">eduardo.sousa <span class="t-dim"># desenvolvedor de software</span></p>
+              <p class="t-line"><span class="t-prompt">$</span> cat servicos.txt</p>
+              <p class="t-line t-out">sistemas web · sites · saas · automações</p>
+              <p class="t-line"><span class="t-prompt">$</span> ./deploy.sh --prod</p>
+              <p class="t-line t-out t-ok">&#10003; build ok — deploy concluído</p>
+              <p class="t-line"><span class="t-prompt">$</span><span class="t-cursor"></span></p>
             </div>
-          </a>
-          <a href="https://github.com" target="_blank" rel="noopener" class="contato__item">
-            <span class="contato__icon">&#128190;</span>
-            <div>
-              <strong>GitHub</strong>
-              <span>github.com/eduardo-sousa</span>
-            </div>
-          </a>
+          </div>
         </div>
-        <form class="contato__form" id="contactForm">
-          <div class="form-group">
-            <label for="nome">Nome</label>
-            <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
-          </div>
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
-          </div>
-          <div class="form-group">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Sua mensagem..." required></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
-          <p class="form__feedback" id="formFeedback"></p>
-        </form>
       </div>
-    </div>
-  </section>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section sobre section--depth" id="sobre">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__eyebrow"><span class="section__num">01</span> Sobre</span>
+          <h2 class="section__title">Quem constrói</h2>
+        </header>
+        <div class="sobre__grid">
+          <div class="sobre__text" data-reveal>
+            <p>Sou <strong>Eduardo Costa Alberto de Sousa</strong>, desenvolvedor de software. Construo soluções digitais completas — sistemas web, sites, landing pages, SaaS e automações — cuidando do backend, do frontend e das integrações entre eles.</p>
+            <p>Antes do código, procuro entender o problema do negócio: o que precisa funcionar, quem vai usar e onde está o valor. A partir daí, projeto uma solução clara, com interface simples de usar e código organizado, fácil de manter e evoluir.</p>
+            <p>Minha base em sistemas e infraestrutura fecha o ciclo: desenvolvo, integro, faço o deploy e mantenho o software rodando bem em produção.</p>
+          </div>
+          <div class="sobre__cards" data-stagger>
+            <div class="card card--stat" data-reveal>
+              <span class="card__number">5+</span>
+              <span class="card__label">anos com sistemas e infraestrutura</span>
+            </div>
+            <div class="card card--stat" data-reveal>
+              <span class="card__number">20+</span>
+              <span class="card__label">projetos entregues ponta a ponta</span>
+            </div>
+            <div class="card card--stat" data-reveal>
+              <span class="card__number">Full-Stack</span>
+              <span class="card__label">da infra ao produto final</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HABILIDADES -->
+    <section class="section habilidades section--depth section--grid" id="habilidades">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__eyebrow"><span class="section__num">02</span> Habilidades</span>
+          <h2 class="section__title">Visão completa de desenvolvimento</h2>
+          <p class="section__lead">Frontend, backend, dados e infraestrutura — organizados para entregar produto, não só código.</p>
+        </header>
+        <div class="skills__grid" data-stagger>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group__title">Frontend</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">React</span>
+                  <span class="skill-item__level">Proficiente</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:80%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">Next.js</span>
+                  <span class="skill-item__level">Proficiente</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:78%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">TypeScript</span>
+                  <span class="skill-item__level">Proficiente</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:76%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">Tailwind CSS</span>
+                  <span class="skill-item__level">Proficiente</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:82%"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group__title">Backend &amp; APIs</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">Python</span>
+                  <span class="skill-item__level skill-item__level--adv">Avançado</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:85%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">Node.js</span>
+                  <span class="skill-item__level">Proficiente</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:78%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">SQL &amp; Banco de Dados</span>
+                  <span class="skill-item__level">Proficiente</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:72%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">Shell Script / Bash</span>
+                  <span class="skill-item__level skill-item__level--adv">Avançado</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:88%"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group__title">Cloud &amp; Deploy</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">AWS / Azure</span>
+                  <span class="skill-item__level">Proficiente</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:80%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">Docker &amp; Kubernetes</span>
+                  <span class="skill-item__level">Proficiente</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:75%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">CI/CD Pipelines</span>
+                  <span class="skill-item__level">Proficiente</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:70%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">Terraform / IaC</span>
+                  <span class="skill-item__level">Intermediário</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:65%"></div></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skill-group" data-reveal>
+            <h3 class="skill-group__title">Sistemas &amp; Segurança</h3>
+            <ul class="skill-list">
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">Linux / Unix</span>
+                  <span class="skill-item__level skill-item__level--adv">Avançado</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:90%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">Redes &amp; Protocolos</span>
+                  <span class="skill-item__level skill-item__level--adv">Avançado</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:85%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">Virtualização (VMware / Hyper-V)</span>
+                  <span class="skill-item__level">Proficiente</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:80%"></div></div>
+              </li>
+              <li class="skill-item">
+                <div class="skill-item__head">
+                  <span class="skill-item__name">Segurança de Sistemas</span>
+                  <span class="skill-item__level">Proficiente</span>
+                </div>
+                <div class="skill-item__bar"><div class="skill-item__fill" style="--w:75%"></div></div>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="tags__area" data-reveal>
+          <span class="tags__label">Também trabalho com</span>
+          <div class="tags__list">
+            <span class="tag">Git</span>
+            <span class="tag">SCRUM / Agile</span>
+            <span class="tag">Arquitetura de Software</span>
+            <span class="tag">Active Directory</span>
+            <span class="tag">TCP/IP</span>
+            <span class="tag">Monitoramento</span>
+            <span class="tag">Elasticsearch</span>
+            <span class="tag">Ansible</span>
+            <span class="tag">PowerShell</span>
+            <span class="tag">ITIL</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">Prisma</span>
+            <span class="tag">Vitest</span>
+            <span class="tag">Zod</span>
+            <span class="tag">Vite</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section class="section projetos section--depth section--grid" id="projetos">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__eyebrow"><span class="section__num">03</span> Projetos</span>
+          <h2 class="section__title">Casos selecionados</h2>
+          <p class="section__lead">Projetos construídos ponta a ponta — do problema à solução em produção.</p>
+        </header>
+
+        <div class="projetos__filters" role="group" aria-label="Filtrar projetos por categoria" data-reveal>
+          <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">Todos</button>
+          <button type="button" class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" class="filter-btn" data-filter="sistemas" aria-pressed="false">Sistemas</button>
+          <button type="button" class="filter-btn" data-filter="landing" aria-pressed="false">Landing &amp; SaaS</button>
+          <button type="button" class="filter-btn" data-filter="infra" aria-pressed="false">Infraestrutura</button>
+          <button type="button" class="filter-btn" data-filter="devops" aria-pressed="false">DevOps</button>
+        </div>
+
+        <div class="projetos__grid" data-stagger>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M16 2v4"/><path d="M8 2v4"/><path d="M3 10h18"/><path d="m9 16 2 2 4-4"/></svg>
+              </span>
+              <span class="project-card__tag">Full-Stack</span>
+            </div>
+            <h3 class="project-card__title">Barbearia Stile</h3>
+            <p class="project-card__desc">Sistema web de agendamento e gestão para barbearia — horários, serviços e barbeiros com regras que evitam conflitos na agenda.</p>
+            <div class="project-card__techs">
+              <span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Prisma</span><span>Auth.js</span>
+            </div>
+            <button type="button" class="project-card__more">Ver detalhes <span class="project-card__more-icon" aria-hidden="true">&#8594;</span></button>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg>
+              </span>
+              <span class="project-card__tag">Landing Page</span>
+            </div>
+            <h3 class="project-card__title">CíliosClick</h3>
+            <p class="project-card__desc">Landing page de conversão para um SaaS de gestão voltado a lash designers — produto, planos, depoimentos e chamada para assinatura.</p>
+            <div class="project-card__techs">
+              <span>React</span><span>TypeScript</span><span>Tailwind</span><span>Framer Motion</span><span>SaaS</span>
+            </div>
+            <button type="button" class="project-card__more">Ver detalhes <span class="project-card__more-icon" aria-hidden="true">&#8594;</span></button>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              </span>
+              <span class="project-card__tag">Infraestrutura</span>
+            </div>
+            <h3 class="project-card__title">Automação de Infraestrutura</h3>
+            <p class="project-card__desc">Provisionamento automatizado multi-cloud com Terraform e Ansible — setup de ambientes 70% mais rápido e reproduzível.</p>
+            <div class="project-card__techs">
+              <span>Terraform</span><span>Ansible</span><span>AWS</span>
+            </div>
+            <button type="button" class="project-card__more">Ver detalhes <span class="project-card__more-icon" aria-hidden="true">&#8594;</span></button>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg>
+              </span>
+              <span class="project-card__tag">Monitoramento</span>
+            </div>
+            <h3 class="project-card__title">Sistema de Monitoramento</h3>
+            <p class="project-card__desc">Dashboard centralizado com alertas automáticos, logs estruturados e análise em tempo real da saúde dos serviços.</p>
+            <div class="project-card__techs">
+              <span>Python</span><span>Elasticsearch</span><span>Grafana</span>
+            </div>
+            <button type="button" class="project-card__more">Ver detalhes <span class="project-card__more-icon" aria-hidden="true">&#8594;</span></button>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </span>
+              <span class="project-card__tag">Segurança</span>
+            </div>
+            <h3 class="project-card__title">Hardening de Servidores</h3>
+            <p class="project-card__desc">Políticas de segurança e hardening aplicadas em servidores Linux e Windows seguindo os padrões CIS Benchmark.</p>
+            <div class="project-card__techs">
+              <span>Linux</span><span>PowerShell</span><span>CIS</span>
+            </div>
+            <button type="button" class="project-card__more">Ver detalhes <span class="project-card__more-icon" aria-hidden="true">&#8594;</span></button>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+              </span>
+              <span class="project-card__tag">DevOps</span>
+            </div>
+            <h3 class="project-card__title">Pipeline CI/CD Corporativo</h3>
+            <p class="project-card__desc">Esteira de integração e entrega contínua com testes automatizados e deploy padronizado para o time de desenvolvimento.</p>
+            <div class="project-card__techs">
+              <span>GitLab CI</span><span>Docker</span><span>Kubernetes</span>
+            </div>
+            <button type="button" class="project-card__more">Ver detalhes <span class="project-card__more-icon" aria-hidden="true">&#8594;</span></button>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+              </span>
+              <span class="project-card__tag">Redes</span>
+            </div>
+            <h3 class="project-card__title">Redesign de Rede Corporativa</h3>
+            <p class="project-card__desc">Arquitetura de rede segmentada com VLANs, firewall e VPN, planejada e implementada para empresa de médio porte.</p>
+            <div class="project-card__techs">
+              <span>VLAN</span><span>VPN</span><span>Firewall</span>
+            </div>
+            <button type="button" class="project-card__more">Ver detalhes <span class="project-card__more-icon" aria-hidden="true">&#8594;</span></button>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+              </span>
+              <span class="project-card__tag">Desenvolvimento</span>
+            </div>
+            <h3 class="project-card__title">Gestão de Ativos de TI</h3>
+            <p class="project-card__desc">Aplicação web de inventário e gestão de ativos com integração LDAP, relatórios automatizados e auditoria de mudanças.</p>
+            <div class="project-card__techs">
+              <span>Python</span><span>SQL</span><span>LDAP</span>
+            </div>
+            <button type="button" class="project-card__more">Ver detalhes <span class="project-card__more-icon" aria-hidden="true">&#8594;</span></button>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-card__header">
+              <span class="project-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="6" x2="10" y1="12" y2="12"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="15" x2="15.01" y1="13" y2="13"/><line x1="18" x2="18.01" y1="11" y2="11"/><rect width="20" height="12" x="2" y="6" rx="4"/></svg>
+              </span>
+              <span class="project-card__tag">Desenvolvimento</span>
+            </div>
+            <h3 class="project-card__title">Verificador de Requisitos de Jogos</h3>
+            <p class="project-card__desc">Consulta rápida de requisitos mínimos e recomendados de hardware por jogo, com dados processados via Azure.</p>
+            <div class="project-card__techs">
+              <span>HTML</span><span>JavaScript</span><span>Python</span><span>Azure</span>
+            </div>
+            <button type="button" class="project-card__more">Ver detalhes <span class="project-card__more-icon" aria-hidden="true">&#8594;</span></button>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESSO -->
+    <section class="section processo section--depth" id="processo">
+      <div class="container">
+        <header class="section__head" data-reveal>
+          <span class="section__eyebrow"><span class="section__num">04</span> Processo</span>
+          <h2 class="section__title">Como eu trabalho</h2>
+          <p class="section__lead">Um caminho claro do primeiro contato à entrega — sem surpresa no meio do projeto.</p>
+        </header>
+        <ol class="processo__grid" data-stagger>
+          <li class="step" data-reveal>
+            <span class="step__num">01</span>
+            <h3 class="step__title">Entendimento do problema</h3>
+            <p class="step__desc">Antes de falar de tecnologia, entendo o negócio: o objetivo, quem vai usar e o que precisa funcionar.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">02</span>
+            <h3 class="step__title">Planejamento da solução</h3>
+            <p class="step__desc">Defino escopo, prioridades e o caminho mais direto para colocar a solução em produção.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">03</span>
+            <h3 class="step__title">Design &amp; arquitetura</h3>
+            <p class="step__desc">Estruturo dados, integrações e interface para o sistema crescer sem virar retrabalho.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">04</span>
+            <h3 class="step__title">Desenvolvimento</h3>
+            <p class="step__desc">Código organizado, tipado e versionado, com entregas frequentes para você acompanhar o progresso.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">05</span>
+            <h3 class="step__title">Testes &amp; ajustes</h3>
+            <p class="step__desc">Valido os fluxos, corrijo os detalhes e garanto que tudo funciona antes de ir ao ar.</p>
+          </li>
+          <li class="step" data-reveal>
+            <span class="step__num">06</span>
+            <h3 class="step__title">Entrega &amp; evolução</h3>
+            <p class="step__desc">Deploy, monitoramento e suporte — o software continua evoluindo depois do lançamento.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="section contato section--depth section--grid" id="contato">
+      <div class="container">
+        <header class="section__head section__head--center" data-reveal>
+          <span class="section__eyebrow"><span class="section__num">05</span> Contato</span>
+          <h2 class="section__title">Precisa tirar um projeto do papel?</h2>
+          <p class="section__lead">Me conte o que você quer construir — site, sistema, SaaS ou automação — e eu retorno com um plano claro para o seu projeto.</p>
+        </header>
+        <div class="contato__grid">
+          <div class="contato__info" data-stagger>
+            <a href="mailto:edu.sousabsb@gmail.com" class="contato__item" data-reveal>
+              <span class="contato__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </span>
+              <div>
+                <strong>E-mail</strong>
+                <span>edu.sousabsb@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="contato__item" data-reveal>
+              <span class="contato__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5A5.5 5.5 0 0 1 16 8z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              </span>
+              <div>
+                <strong>LinkedIn</strong>
+                <span>linkedin.com/in/eduardo-sousa</span>
+              </div>
+            </a>
+            <a href="https://github.com/Educosta2405" target="_blank" rel="noopener" class="contato__item" data-reveal>
+              <span class="contato__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              </span>
+              <div>
+                <strong>GitHub</strong>
+                <span>github.com/Educosta2405</span>
+              </div>
+            </a>
+            <p class="contato__note" data-reveal>Respondo em até 1 dia útil. Se preferir, mande direto um resumo do projeto pelo formulário.</p>
+          </div>
+          <form class="contato__form" id="contactForm" novalidate data-reveal>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Sobre o projeto</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="O que você precisa construir? Conte o essencial: objetivo, prazo e referências." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Enviar Mensagem</button>
+            <p class="form__feedback" id="formFeedback" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container">
+    <div class="container footer__inner">
+      <span class="footer__mark">ES</span>
       <p>&copy; 2026 Eduardo Costa Alberto de Sousa. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <!-- MODAL DE PROJETO -->
+  <div class="modal" id="projectModal" hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+    <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button type="button" class="modal__close" data-modal-close aria-label="Fechar detalhes">&#215;</button>
+      <span class="modal__tag" id="modalTag"></span>
+      <h3 class="modal__title" id="modalTitle"></h3>
+      <div class="modal__body" id="modalBody"></div>
+      <div class="modal__techs" id="modalTechs"></div>
+      <a class="btn btn--primary" href="#contato" id="modalCta" data-modal-close>Quero um projeto assim <span class="btn__icon" aria-hidden="true">&#8594;</span></a>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
